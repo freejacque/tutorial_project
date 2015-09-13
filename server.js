@@ -1,7 +1,7 @@
 // require the http module and set it to a local variable
 // convention is to make the module name as the variable name
 var http = require("http");
-
+var url = require("url");
 // createServer is a function in the http module that returns an object
 // pass an anonymous function to createServer function
   // http.createServer(function(request, response) {
@@ -17,6 +17,7 @@ var http = require("http");
 
 function start() {
   function onRequest(request, response) {
+    var pathname = url.parse(request.url).pathname;
     console.log("request received.");
     response.writeHead(200, {"Content-Type": "text/plain"});
     response.write("***Kanye Shrug***");
