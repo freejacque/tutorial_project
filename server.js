@@ -26,4 +26,5 @@ function start() {
   http.createServer(onRequest).listen(8888);
   console.log("Server has started");
 }
+// start() can now be called by other files to start the server
 exports.start = start;
