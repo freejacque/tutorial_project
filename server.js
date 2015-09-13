@@ -1,4 +1,4 @@
-// require the http module and set it to a variable
+// require the http module and set it to a local variable
 var http = require("http");
 
 // createServer is a function in the http module that returns an object
@@ -13,3 +13,5 @@ http.createServer(function(request, response) {
   // alternate server code
 // var server = http.createServer();
 // server.listen(8888);
+
+
