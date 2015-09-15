@@ -5,12 +5,13 @@ var http = require("http");
 var url = require("url");
 
 // createServer is a function in the http module that returns an object
-function start(route) {
+// the start function is being passed the route and the handle object
+function start(route, handle) {
   function onRequest(request, response) {
     var pathname = url.parse(request.url).pathname;
     console.log("Request for " + pathname + " received.");
 
-    route(pathname);
+    route(handle, pathname);
 
     response.writeHead(200, {"Content-Type": "text/plain"});
     response.write("***Kanye Shrug***");
