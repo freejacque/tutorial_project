@@ -10,4 +10,4 @@ handle["/start"] = requestHandlers.start;
 handle["/upload"] = requestHandlers.upload;
 
 // call the server function and pass in the router function "route"
-server.start(router.route);
+server.start(router.route, handle);
