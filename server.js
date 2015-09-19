@@ -14,6 +14,7 @@ function start(route, handle) {
 
     var content = route(handle, pathname);
     response.writeHead(200, {"Content-Type": "text/plain"});
+    // this is causing a type error, not sure why
     response.write(content);
     response.end();
   }
