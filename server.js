@@ -12,12 +12,9 @@ function start(route, handle) {
     console.log("Request for " + pathname + " received.");
 
 
-    var content = route(handle, pathname);
-    response.writeHead(200, {"Content-Type": "text/plain"});
-    // this is causing a type error, not sure why
-    response.write(content);
-    response.end();
+    route(handle, pathname, response);
   }
+
 // listen() is a public funtion in the http module
   http.createServer(onRequest).listen(8888);
   console.log("Server has started");
