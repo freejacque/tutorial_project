@@ -11,7 +11,7 @@ function start(response) {
   });
 }
 
-function upload() {
+function upload(response) {
   console.log("Request handler 'upload' was called.");
   return "Hello Upload";
 }
