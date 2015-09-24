@@ -5,10 +5,10 @@ function start(response) {
   console.log("Request handler 'start' was called.");
 
   exec("ls -lah", function (error, stdout, stderr){
-    content = stdout;
+    response.writeHead(200, {"Content-Type": "text/plain"});
+    response.write(stdout);
+    response.end();
   });
-
-  return content;
 }
 
 function upload() {
