@@ -8,6 +8,7 @@ var url = require("url");
 // the start function is being passed the route and the handle object
 function start(route, handle) {
   function onRequest(request, response) {
+    var postData = "";
     var pathname = url.parse(request.url).pathname;
     console.log("Request for " + pathname + " received.");
 
