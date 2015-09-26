@@ -19,6 +19,11 @@ function start(route, handle) {
       console.log("Received POST data chunk '" +
         postDataChunk + "'.");
     });
+
+    request.addListener("end", function() {
+      route(handle, pathname, response, postData);
+    });
+
   }
 
 // listen() is a public funtion in the http module
