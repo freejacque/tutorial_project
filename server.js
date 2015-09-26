@@ -13,6 +13,12 @@ function start(route, handle) {
     console.log("Request for " + pathname + " received.");
 
     request.setEncoding("utf8");
+
+    request.addListener("data", function(postDataChunk){
+      postData += postDataChunk;
+      console.log("Received POST data chunk '" +
+        postDataChunk + "'.");
+    });
   }
 
 // listen() is a public funtion in the http module
