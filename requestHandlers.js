@@ -1,6 +1,7 @@
 function start(response) {
   console.log("Request handler 'start' was called.");
 
+  // text area to be filled user and submitted in a post request
   var body = '<html>' +
     '<head>' +
     '<meta http-equiv="Content-Type" content="text/html; ' +
