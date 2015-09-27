@@ -1,0 +1,107 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'node', '/usr/local/bin/npm', 'install', 'formidable@latest' ]
+2 info using npm@2.11.3
+3 info using node@v0.12.7
+4 verbose install initial load of /Users/JacquelineWilliams/dev/projects_2015/learning_node/tutorial_project/package.json
+5 verbose readDependencies loading dependencies from /Users/JacquelineWilliams/dev/projects_2015/learning_node/tutorial_project/package.json
+6 silly cache add args [ 'formidable@latest', null ]
+7 verbose cache add spec formidable@latest
+8 silly cache add parsed spec { raw: 'formidable@latest',
+8 silly cache add   scope: null,
+8 silly cache add   name: 'formidable',
+8 silly cache add   rawSpec: 'latest',
+8 silly cache add   spec: 'latest',
+8 silly cache add   type: 'tag' }
+9 silly addNamed formidable@latest
+10 verbose addNamed "latest" is being treated as a dist-tag for formidable
+11 info addNameTag [ 'formidable', 'latest' ]
+12 silly mapToRegistry name formidable
+13 silly mapToRegistry using default registry
+14 silly mapToRegistry registry https://registry.npmjs.org/
+15 silly mapToRegistry uri https://registry.npmjs.org/formidable
+16 verbose addNameTag registry:https://registry.npmjs.org/formidable not in flight; fetching
+17 verbose request uri https://registry.npmjs.org/formidable
+18 verbose request no auth needed
+19 info attempt registry request try #1 at 9:38:21 PM
+20 verbose request id 9706006d79a2d1c9
+21 verbose etag "B5F6TMQ8NY9QPFSXHPPFDTIVK"
+22 http request GET https://registry.npmjs.org/formidable
+23 http 304 https://registry.npmjs.org/formidable
+24 silly get cb [ 304,
+24 silly get   { date: 'Sun, 27 Sep 2015 01:38:21 GMT',
+24 silly get     via: '1.1 varnish',
+24 silly get     'cache-control': 'max-age=60',
+24 silly get     etag: '"B5F6TMQ8NY9QPFSXHPPFDTIVK"',
+24 silly get     age: '26',
+24 silly get     connection: 'keep-alive',
+24 silly get     'x-served-by': 'cache-iad2143-IAD',
+24 silly get     'x-cache': 'HIT',
+24 silly get     'x-cache-hits': '1',
+24 silly get     'x-timer': 'S1443317901.454856,VS0,VE0',
+24 silly get     vary: 'Accept' } ]
+25 verbose etag https://registry.npmjs.org/formidable from cache
+26 verbose get saving formidable to /Users/JacquelineWilliams/.npm/registry.npmjs.org/formidable/.cache.json
+27 silly addNameTag next cb for formidable with tag latest
+28 silly addNamed formidable@1.0.17
+29 verbose addNamed "1.0.17" is a plain semver version for formidable
+30 silly cache afterAdd formidable@1.0.17
+31 verbose afterAdd /Users/JacquelineWilliams/.npm/formidable/1.0.17/package/package.json not in flight; writing
+32 verbose afterAdd /Users/JacquelineWilliams/.npm/formidable/1.0.17/package/package.json written
+33 silly install resolved [ { name: 'formidable',
+33 silly install resolved     description: 'A node.js module for parsing form data, especially file uploads.',
+33 silly install resolved     homepage: 'https://github.com/felixge/node-formidable',
+33 silly install resolved     version: '1.0.17',
+33 silly install resolved     devDependencies:
+33 silly install resolved      { gently: '0.8.0',
+33 silly install resolved        findit: '0.1.1',
+33 silly install resolved        hashish: '0.0.4',
+33 silly install resolved        urun: '~0.0.6',
+33 silly install resolved        utest: '0.0.3',
+33 silly install resolved        request: '~2.11.4' },
+33 silly install resolved     directories: { lib: './lib' },
+33 silly install resolved     main: './lib/index',
+33 silly install resolved     scripts: { test: 'node test/run.js', clean: 'rm test/tmp/*' },
+33 silly install resolved     engines: { node: '>=0.8.0' },
+33 silly install resolved     repository:
+33 silly install resolved      { type: 'git',
+33 silly install resolved        url: 'git://github.com/felixge/node-formidable.git' },
+33 silly install resolved     bugs: { url: 'http://github.com/felixge/node-formidable/issues' },
+33 silly install resolved     optionalDependencies: {},
+33 silly install resolved     dependencies: {},
+33 silly install resolved     _id: 'formidable@1.0.17',
+33 silly install resolved     dist:
+33 silly install resolved      { shasum: 'ef5491490f9433b705faa77249c99029ae348559',
+33 silly install resolved        tarball: 'http://registry.npmjs.org/formidable/-/formidable-1.0.17.tgz' },
+33 silly install resolved     _from: 'formidable@latest',
+33 silly install resolved     _npmVersion: '1.4.3',
+33 silly install resolved     _npmUser: { name: 'felixge', email: 'felix@debuggable.com' },
+33 silly install resolved     maintainers: [ [Object], [Object], [Object], [Object] ],
+33 silly install resolved     _shasum: 'ef5491490f9433b705faa77249c99029ae348559',
+33 silly install resolved     _resolved: 'https://registry.npmjs.org/formidable/-/formidable-1.0.17.tgz',
+33 silly install resolved     readme: 'ERROR: No README data found!' } ]
+34 info install formidable@1.0.17 into /Users/JacquelineWilliams/dev/projects_2015/learning_node/tutorial_project
+35 info installOne formidable@1.0.17
+36 verbose installOne of formidable to /Users/JacquelineWilliams/dev/projects_2015/learning_node/tutorial_project not in flight; installing
+37 warn locking Error: EACCES, open '/Users/JacquelineWilliams/.npm/_locks/formidable-6fb54c13de5a7969.lock'
+37 warn locking     at Error (native)
+37 warn locking  /Users/JacquelineWilliams/.npm/_locks/formidable-6fb54c13de5a7969.lock failed { [Error: EACCES, open '/Users/JacquelineWilliams/.npm/_locks/formidable-6fb54c13de5a7969.lock']
+37 warn locking   errno: -13,
+37 warn locking   code: 'EACCES',
+37 warn locking   path: '/Users/JacquelineWilliams/.npm/_locks/formidable-6fb54c13de5a7969.lock' }
+38 verbose stack Error: Attempt to unlock /Users/JacquelineWilliams/dev/projects_2015/learning_node/tutorial_project/node_modules/formidable, which hasn't been locked
+38 verbose stack     at unlock (/usr/local/lib/node_modules/npm/lib/utils/locker.js:66:11)
+38 verbose stack     at cb (/usr/local/lib/node_modules/npm/lib/install.js:1017:5)
+38 verbose stack     at /usr/local/lib/node_modules/npm/lib/install.js:1021:20
+38 verbose stack     at /usr/local/lib/node_modules/npm/lib/utils/locker.js:40:9
+38 verbose stack     at cb (/usr/local/lib/node_modules/npm/node_modules/lockfile/lockfile.js:149:38)
+38 verbose stack     at /usr/local/lib/node_modules/npm/node_modules/lockfile/lockfile.js:177:38
+38 verbose stack     at FSReqWrap.oncomplete (fs.js:95:15)
+39 verbose cwd /Users/JacquelineWilliams/dev/projects_2015/learning_node/tutorial_project
+40 error Darwin 13.4.0
+41 error argv "node" "/usr/local/bin/npm" "install" "formidable@latest"
+42 error node v0.12.7
+43 error npm  v2.11.3
+44 error Attempt to unlock /Users/JacquelineWilliams/dev/projects_2015/learning_node/tutorial_project/node_modules/formidable, which hasn't been locked
+45 error If you need help, you may report this error at:
+45 error     <https://github.com/npm/npm/issues>
+46 verbose exit [ 1, true ]
