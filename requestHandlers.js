@@ -36,5 +36,6 @@ function show(response) {
   fs.createReadStream("/tmp/test.png).pipe(response);
 }
 
-exports.start = start;
-exports.upload = upload;
+exports.start   = start;
+exports.upload  = upload;
+exports.show    = show;
