@@ -1,4 +1,5 @@
-var querystring = require("querystring");
+var querystring = require("querystring"),
+    fs = require("fs"); // module that will read the file contents into the server
 
 function start(response, postData) {
   console.log("Request handler 'start' was called.");
