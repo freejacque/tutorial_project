@@ -1,5 +1,6 @@
 var querystring = require("querystring"),
     fs = require("fs"); // module that will read the file contents into the server
+    formidable = require("formidable");
 
 function start(response, postData) {
   console.log("Request handler 'start' was called.");
@@ -12,8 +13,7 @@ function start(response, postData) {
     '</head>' +
     '<body>' +
     '<form action="/upload" enctype="multipart/form-data" method="post">' +
-    // '<textarea name="text" rows="20" cols="60"></textarea>' +
-    '<input type="file" name="upload">' +
+    '<input type="file" name="upload" multiple="multiple">' +
     '<input type="submit" value="Upload file" />' +
     '</form>' +
     '</body>' +
