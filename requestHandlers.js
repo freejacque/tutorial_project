@@ -38,8 +38,9 @@ function upload(response, request) {
         fs.rename(files.upload.path, "/tmp/apple_raw.png");
       }
     });
-    response.writeHead(200, {"Content-Type": "text/plain"});
-    response.write("You've sent: " + querystring.parse(postData).text);
+    response.writeHead(200, {"Content-Type": "text/html"});
+    response.write("received image:<br/>");
+    response.write("<img src='/show' />");
     response.end();
   });
 }
