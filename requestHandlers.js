@@ -24,11 +24,24 @@ function start(response, postData) {
     response.end();
 }
 
-function upload(response, postData) {
+function upload(response, request) {
   console.log("Request handler 'upload' was called.");
-  response.writeHead(200, {"Content-Type": "text/plain"});
-  response.write("You've sent: " + querystring.parse(postData).text);
-  response.end();
+
+  var form = new formidable.IncomingForm();
+  console.log("about to parse");
+  form.parse(request, function(error, fields, files) {
+    console.log("parsing done");
+
+    fs.rename(files.upload.path, "/tmp/apple_raw.png", function(error) {
+      if (error) {
+        fs.unlink("/tmp/apple_raw.png");
+        fs.rename(files.upload.path, "/tmp/apple_raw.png");
+      }
+    });
+    response.writeHead(200, {"Content-Type": "text/plain"});
+    response.write("You've sent: " + querystring.parse(postData).text);
+    response.end();
+  });
 }
 
 function show(response) {
