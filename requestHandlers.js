@@ -1,6 +1,6 @@
 var querystring = require("querystring"),
     fs = require("fs"); // module that will read the file contents into the server
-    formidable = require("formidable");
+    formidable = require("./formidable");
 
 function start(response, postData) {
   console.log("Request handler 'start' was called.");
