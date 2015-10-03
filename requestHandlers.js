@@ -1,11 +1,13 @@
 var querystring = require("querystring"),
-    fs = require("fs"); // module that will read the file contents into the server
+    // module that will read the file contents into the server
+    fs = require("fs");
+    //  is a node.js module used to parse form data (used especially for file uploads)
     formidable = require("./formidable");
 
 function start(response, postData) {
   console.log("Request handler 'start' was called.");
 
-  // text area to be filled user and submitted in a post request
+  // a form that allows a user to upload an image file
   var body = '<html>' +
     '<head>' +
     '<meta http-equiv="Content-Type" content="text/html; ' +

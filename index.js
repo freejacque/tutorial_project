@@ -6,6 +6,7 @@ var requestHandlers = require("./requestHandlers");
 var handle = {};
 // the handlers are key/value pairs
 // the keys are routes and the values are functions
+// the keys are called using routes
 handle["/"] = requestHandlers.start;
 handle["/start"] = requestHandlers.start;
 handle["/upload"] = requestHandlers.upload;
