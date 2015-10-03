@@ -41,6 +41,7 @@ function upload(response, request) {
       }
     });
     response.writeHead(200, {"Content-Type": "text/html"});
+    // html that will display the uploaded image
     response.write("received image:<br/>");
     response.write("<img src='/show' />");
     response.end();
